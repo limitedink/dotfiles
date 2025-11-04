@@ -22,7 +22,7 @@ Personal configuration for my Linux setup. This repo contains my Zsh, Neovim, Gh
   - Enables key services: sshd, docker, tailscaled, syncthing, streamdeck
   - Restarts vconsole setup so the TTY layout applies immediately
 
-##Repo structure
+## Repo structure
 ```
 dotfiles/
 ├── bootstrap.sh
