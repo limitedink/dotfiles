@@ -8,12 +8,26 @@ echo "Linking dotfiles..."
 ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/zsh/functions.zsh ~/.oh-my-zsh/custom/functions.zsh
 
+# Ghostty
 ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
-ln -sf ~/dotfiles/hypr/input.conf ~/.config/hypr/input.conf
+
+# Nvim
+ln -sf ~/dotfiles/nvim/lua/config/options.lua ~/.config/nvim/lua/config/options.lua 
+
+# Hyprland
+ln -sf ~/dotfiles/hypr/bindings.conf ~/.config/hypr/bindings.conf
 ln -sf ~/dotfiles/hypr/looknfeel.conf ~/.config/hypr/looknfeel.conf
-ln -sf ~/dotfiles/nvim/lua/config/options.lua ~/.config/nvim/lua/config/options.lua
+ln -sf ~/dotfiles/hypr/input.conf ~/.config/hypr/input.conf
+
+# Waybar
+ln -sf ~/dotfiles/waybar/config.jsonc ~/.config/waybar/config.jsonc
+ln -sf ~/dotfiles/waybar/style.css ~/.config/waybar/style.css
+ln -sf ~/dotfiles/waybar/scripts/weather.zsh ~/.config/waybar/scripts/weather.zsh
+
 
 sudo ln -sf ~/dotfiles/etc/vconsole.conf /etc/vconsole.conf
+
+
 
 echo "Symlinks complete."
 
