@@ -1,27 +1,28 @@
-# Dotfiles
+#Dotfiles
 
-Personal configuration for my Linux setup. This repo contains my Zsh, Neovim, Ghostty, and Hyprland configs, plus a bootstrap script to apply them on a new Linux machine.
+Personal configuration for my Linux setup. This repo contains my Zsh, Neovim, Ghostty, Hyprland configs etc, plus a bootstrap script to apply them on a new Linux machine.
 
-## What is included
+##What is included
 
-- Zsh
-  - .zshrc with Oh My Zsh
-  - functions.zsh for custom aliases and helper functions
-- Terminal
-  - Ghostty config
-- Neovim
-  - lua/config/options.lua
-- Hyprland
-  - input.conf and looknfeel.conf
-- System
-  - etc/vconsole.conf for TTY keyboard layout (colemak dh btw)
-- Bootstrap script
-  - Creates symlinks for all configs
-  - Enables key services: sshd, docker, tailscaled, syncthing, streamdeck
-  - Restarts vconsole setup so the TTY layout applies immediately
+-Zsh
+  -.zshrc with Oh My Zsh
+  -functions.zsh for custom aliases and helper functions
+-Terminal
+  -Ghostty config
+-Neovim
+  -lua/config/options.lua
+-Hyprland
+  -input.conf, looknfeel.conf, and bindings.conf
+-Waybar
+  -config.jsonc, style.css, and scripts/weather.zsh
+-System
+  -etc/vconsole.conf for TTY keyboard layout (colemak dh btw)
+-Bootstrap script
+  -Creates symlinks for all configs
+  -Enables key services: sshd, docker, tailscaled, syncthing, streamdeck
+  -Restarts vconsole setup so the TTY layout applies immediately
 
-## Repo structure
-
+##Repo structure
 ```
 dotfiles/
 ├── bootstrap.sh
@@ -31,16 +32,21 @@ dotfiles/
 │   └── config
 ├── hypr/
 │   ├── input.conf
-│   └── looknfeel.conf
+│   ├── looknfeel.conf
+│   └── bindings.conf
 ├── nvim/
 │   └── lua/
 │       └── config/
 │           └── options.lua
+├── waybar/
+│   ├── config.jsonc
+│   ├── style.css
+│   └── scripts/
+│       └── weather.zsh
 └── zsh/
     ├── .zshrc
     └── functions.zsh
 ```
-
 ## Bootstrap
 
 Clone the repo and run the bootstrap script.
